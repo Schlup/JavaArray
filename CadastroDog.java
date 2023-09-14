@@ -15,7 +15,7 @@ public class CadastroDog {
 			System.out.println("Informe o nome do cachorro ("+(i+1)+"/"+max+")");
 			currentDog.setName(ler.next());
 			System.out.println("Informe a idade do cachorro ("+(i+1)+"/"+max+")");
-			currentDog.setAge(ler.nextInt());
+			currentDog.setAge(Integer.parseInt(ler.nextLine()));
 			dogList.add(currentDog);
 		}
 		for(int i=0; i<dogList.size(); i++) {
